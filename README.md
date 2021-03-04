@@ -2,7 +2,7 @@
 
 import os 
  
-#create function to define questions
+# create function to define questions
 def processar_resposta(resposta, nome):
   if resposta == '1':
     print(f'{os.linesep}{nome} um triangulo tem 3 lados{os.linesep}')
@@ -15,17 +15,17 @@ def processar_resposta(resposta, nome):
   else:
     print('digite apenas 1, 2, 3 ou 4')
     
-#create a function to build the basis of app
+# create a function to build the basis of app
 def start():
   # apresentar o chatbot
   print('Olá Bem vindo')
-  #pedir o nome
+  # pedir o nome
   nome = input('digite seu nome: ')
-  #pedir email
+  # pedir email
   email = input('digite seu email: ')
-  #oferecer menu de opções
+  # oferecer menu de opções
   
-  #infinite loop to continuos answers
+  # infinite loop to continuos answers
   while True:
       resposta = input(
         f'O que gostaria de saber hoje?{os.linesep}[1]-Quantos lados tem um triangulo?{os.linesep}[2]-Quanto vale a soma dos angulos internos de um triangulo?{os.linesep}[3]-Qual é a formula matematica de um triangulo de pitágoras?{os.linesep}[4]-Qual é a formula da lei dos cossenos?{os.linesep}')
